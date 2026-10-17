@@ -48,6 +48,7 @@ a:hover{
     gap: 20px;
     align-items: center;
     background-color: #e8f6ff;
+    height: 80vh;
 }
 .container img{
     width: 90%;
@@ -162,6 +163,7 @@ i{
        gap: 3rem;
        padding: 5%;
        background-color: #e8f6ff;
+       height: auto;
 }
 }
 
