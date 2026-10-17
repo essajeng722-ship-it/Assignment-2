@@ -7,6 +7,8 @@ header{
     display: flex;
     padding: 2% 7%;
     align-items: center;
+    background-color: #3ba7f2;
+    color: #fff;
 }
 body{
     font-family: 'Times New Roman', Times, serif;
@@ -15,7 +17,7 @@ body{
 header h2{
     margin-right: auto;
     letter-spacing: 2px;
-    font-weight: bold;;
+    font-weight: bold;
 }
 nav ul{
     padding: 0;
@@ -26,38 +28,29 @@ a{
     color: #000;
     font-size: 17px;
 }
+header a{
+    color: #fff;
+}
 header ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
-header a:hover{
-    color: steelblue;
+a:hover{
+    color: #0b3d91;
 }
 .surname{
-    color: steelblue;
-}
-@media screen and (max-width: 768px) {
-    header{
-        display: block;
-    }
-    header h2{
-        text-align: center;
-        margin-bottom: 1rem;
-    } 
-    header ul{
-        display: flex;
-        justify-content: space-around;
-    }
+    color: #0b3d91;
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 20px;
     align-items: center;
-    background: whitesmoke;
+    background-color: #e8f6ff;
 }
 .container img{
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 20px 0;
     border-radius: 50%;
@@ -66,7 +59,7 @@ header a:hover{
     position: relative;
 }
 .container .showcase{
-    width: 80%;
+    width: 95%;
     margin: auto;
 }
 .showcase h1{
@@ -87,28 +80,88 @@ header a:hover{
     gap: 20px;
 }
 #buttons .btn-1{
+    display: inline-flex;
+    gap: 5px;
     background-color: steelblue;
     color: #fff;
-    padding: 1rem 2rem;
+    align-items: center;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
-    transition: transform;
 }
-bt-1:hover{
+.btn-1 i{
+    transition: transform 0.4s;
+}
+.btn-1 i:hover{
     transform: rotateY(180deg);
+}
+#buttons .btn-1 i{
+    color: #fff;
+    font-size: 1.5rem;
 }
 #buttons .btn-2{
+    display: inline-flex;
+    gap : 5px;
+    align-items: center;
     border: 1px solid steelblue;
     color: steelblue;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
     border-radius: 20px;
     transition: transform;
 }
-bt-1:hover{
+.btn-2 i{
+    font-size: 1.5rem;
+    transition: transform 0.4s;
+}
+.btn-2 i:hover{
     transform: rotateY(180deg);
 }
-
+footer{
+    width: 80%;
+    margin: auto;
+}
 footer p{
     float: right;
-    opacity: 50%;
+    opacity: 80%;
+}
+.items{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+i{
+    font-size: 2.5rem;
+    color: steelblue;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap : 1rem;
+}
+.op{
+    opacity: 80%;
+}
+@media screen and (max-width: 768px) {
+    header{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    header h2{
+        text-align: center;
+        margin-bottom: 1rem;
+    } 
+    header ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .container{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+       justify-content: center;
+       gap: 3rem;
+       padding: 5%;
+       background-color: #e8f6ff;
+}
 }
 
